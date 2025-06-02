@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "saat"
+rootProject.name = "clockapp"
 include(":app")
  

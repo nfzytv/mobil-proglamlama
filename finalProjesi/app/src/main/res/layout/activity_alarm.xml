@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/alarmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm Kur"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp" />
+
+    <!-- Saat ve Dakika Girişi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/hourInput"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Saat (0-23)"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="2"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="24sp"
+            android:layout_marginHorizontal="8dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/minuteInput"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Dakika (0-59)"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="2"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Tekrarlama Günleri -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tekrarlama Günleri:"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/mondayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pazartesi"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/tuesdayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salı"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/wednesdayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çarşamba"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/thursdayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perşembe"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/fridayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuma"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/saturdayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cumartesi"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/sundayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pazar"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Alarm Kur Butonu -->
+    <Button
+        android:id="@+id/setAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Alarm Kur"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

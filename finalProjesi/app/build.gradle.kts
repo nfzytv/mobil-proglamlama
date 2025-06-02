@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.saat"
+    namespace = "com.example.clockapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.saat"
-        minSdk = 29
+        applicationId = "com.example.clockapp"
+        minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"

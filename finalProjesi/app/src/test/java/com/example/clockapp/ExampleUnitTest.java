@@ -1,4 +1,4 @@
-package com.example.saat;
+package com.example.clockapp;
 
 import org.junit.Test;
 
